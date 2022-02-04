@@ -1,0 +1,2191 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Currency",
+        "description": "API for marcura.converter.com",
+        "version": "0.0.1"
+    },
+    "host": "marcura.converter.com",
+    "basePath": "/exchange",
+    "schemes": [
+        "https"
+    ],
+    "paths": {
+        "/exchange": {
+            "post": {
+                "tags": [
+                    "Exchange"
+                ],
+                "description": "Create",
+                "operationId": "create",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Create"
+                        },
+                        "examples": {
+                            "application/json": {
+                                "id": "2022-01-30",
+                                "itemPriceMap": {
+                                    "FJD": 2.406775,
+                                    "MXN": 23.195466,
+                                    "STD": 23073.889787,
+                                    "LVL": 0.674325,
+                                    "SCR": 16.056354,
+                                    "CDF": 2239.612304,
+                                    "BBD": 2.247596,
+                                    "GTQ": 8.557644,
+                                    "CLP": 899.908027,
+                                    "HNL": 27.399299,
+                                    "UGX": 3907.272149,
+                                    "ZAR": 17.38325,
+                                    "TND": 3.235161,
+                                    "CUC": 1.114789,
+                                    "BSD": 1.11315,
+                                    "SLL": 12786.634772,
+                                    "SDG": 491.622503,
+                                    "IQD": 1624.720509,
+                                    "CUP": 29.541919,
+                                    "GMD": 58.976655,
+                                    "TWD": 31.038009,
+                                    "RSD": 117.530122,
+                                    "DOP": 64.164332,
+                                    "KMF": 491.90125,
+                                    "MYR": 4.671389,
+                                    "FKP": 0.811478,
+                                    "XOF": 655.868396,
+                                    "GEL": 3.394578,
+                                    "BTC": 2.9468425e-05,
+                                    "UYU": 48.93039,
+                                    "MAD": 10.494782,
+                                    "CVE": 110.250106,
+                                    "TOP": 2.528287,
+                                    "AZN": 1.899568,
+                                    "OMR": 0.429032,
+                                    "PGK": 3.942567,
+                                    "KES": 126.458316,
+                                    "SEK": 10.516036,
+                                    "BTN": 83.585508,
+                                    "UAH": 31.872094,
+                                    "GNF": 10074.339011,
+                                    "ERN": 16.721863,
+                                    "MZN": 71.157428,
+                                    "SVC": 9.740684,
+                                    "ARS": 116.617746,
+                                    "QAR": 4.058991,
+                                    "IRR": 47127.722191,
+                                    "MRO": 397.979623,
+                                    "CNY": 7.091221,
+                                    "THB": 37.238467,
+                                    "UZS": 12042.543117,
+                                    "XPF": 119.620915,
+                                    "BDT": 95.661977,
+                                    "LYD": 5.128607,
+                                    "BMD": 1.114789,
+                                    "KWD": 0.337837,
+                                    "PHP": 56.976303,
+                                    "RUB": 87.170181,
+                                    "PYG": 7867.637125,
+                                    "ISK": 144.020073,
+                                    "JMD": 174.008492,
+                                    "COP": 4411.604016,
+                                    "MKD": 61.621675,
+                                    "USD": 1.114789,
+                                    "DZD": 156.594845,
+                                    "PAB": 1.11325,
+                                    "GGP": 0.811477,
+                                    "SGD": 1.510582,
+                                    "ETB": 55.476205,
+                                    "JEP": 0.811478,
+                                    "KGS": 94.533254,
+                                    "SOS": 652.152175,
+                                    "VEF": 238375664822.6875,
+                                    "VUV": 126.719687,
+                                    "LAK": 12595.698389,
+                                    "BND": 1.510796,
+                                    "ZMK": 10034.446334,
+                                    "XAF": 655.868396,
+                                    "LRD": 169.727111,
+                                    "XAG": 0.049605,
+                                    "CHF": 1.037476,
+                                    "HRK": 7.531187,
+                                    "ALL": 120.80368,
+                                    "DJF": 198.173228,
+                                    "ZMW": 20.065289,
+                                    "TZS": 2572.582458,
+                                    "VND": 25249.979863,
+                                    "XAU": 0.000622,
+                                    "AUD": 1.59552,
+                                    "ILS": 3.569991,
+                                    "GHS": 7.013053,
+                                    "GYD": 232.898537,
+                                    "KPW": 1003.310633,
+                                    "BOB": 7.664265,
+                                    "KHR": 4526.188536,
+                                    "MDL": 19.981801,
+                                    "IDR": 16034.461826,
+                                    "KYD": 0.927675,
+                                    "AMD": 537.667364,
+                                    "BWP": 13.035139,
+                                    "SHP": 1.535515,
+                                    "TRY": 15.108968,
+                                    "LBP": 1683.172612,
+                                    "TJS": 12.573501,
+                                    "JOD": 0.79043,
+                                    "AED": 4.094738,
+                                    "HKD": 8.686778,
+                                    "RWF": 1156.323787,
+                                    "EUR": 1.0,
+                                    "LSL": 17.435732,
+                                    "DKK": 7.442785,
+                                    "CAD": 1.422862,
+                                    "BGN": 1.955236,
+                                    "MMK": 1979.251314,
+                                    "MUR": 48.083504,
+                                    "NOK": 10.020177,
+                                    "SYP": 2800.350717,
+                                    "IMP": 0.811477,
+                                    "ZWL": 358.961731,
+                                    "GIP": 0.811477,
+                                    "RON": 4.94599,
+                                    "LKR": 224.864322,
+                                    "NGN": 463.373781,
+                                    "CRC": 713.363628,
+                                    "CZK": 24.488624,
+                                    "PKR": 196.700627,
+                                    "XCD": 3.012775,
+                                    "ANG": 1.99813,
+                                    "HTG": 114.29156,
+                                    "BHD": 0.420043,
+                                    "KZT": 484.40456,
+                                    "SRD": 23.349306,
+                                    "SZL": 17.370753,
+                                    "LTL": 3.291684,
+                                    "SAR": 4.182733,
+                                    "TTD": 7.565878,
+                                    "YER": 278.976453,
+                                    "MVR": 17.223918,
+                                    "AFN": 114.794492,
+                                    "INR": 83.661047,
+                                    "AWG": 2.007178,
+                                    "KRW": 1348.57231,
+                                    "NPR": 133.736933,
+                                    "JPY": 128.485096,
+                                    "MNT": 3186.994672,
+                                    "AOA": 589.868963,
+                                    "PLN": 4.580181,
+                                    "GBP": 0.831591,
+                                    "SBD": 8.993935,
+                                    "BYN": 2.905108,
+                                    "HUF": 358.561294,
+                                    "BYR": 21849.8722,
+                                    "BIF": 2222.999685,
+                                    "MWK": 909.426141,
+                                    "MGA": 4440.510111,
+                                    "XDR": 0.799792,
+                                    "BZD": 2.243897,
+                                    "BAM": 1.955566,
+                                    "EGP": 17.53963,
+                                    "MOP": 8.936493,
+                                    "NAD": 17.435727,
+                                    "NIO": 39.467668,
+                                    "PEN": 4.276122,
+                                    "NZD": 1.705484,
+                                    "WST": 2.912212,
+                                    "TMT": 3.912911,
+                                    "CLF": 0.032614,
+                                    "BRL": 5.983748
+                                },
+                                "counter": {
+                                    "FJD": 0,
+                                    "MXN": 0,
+                                    "STD": 0,
+                                    "LVL": 0,
+                                    "SCR": 0,
+                                    "CDF": 0,
+                                    "BBD": 0,
+                                    "GTQ": 0,
+                                    "CLP": 0,
+                                    "HNL": 0,
+                                    "UGX": 0,
+                                    "ZAR": 0,
+                                    "TND": 0,
+                                    "CUC": 0,
+                                    "BSD": 0,
+                                    "SLL": 0,
+                                    "SDG": 0,
+                                    "IQD": 0,
+                                    "CUP": 0,
+                                    "GMD": 0,
+                                    "TWD": 0,
+                                    "RSD": 0,
+                                    "DOP": 0,
+                                    "KMF": 0,
+                                    "MYR": 0,
+                                    "FKP": 0,
+                                    "XOF": 0,
+                                    "GEL": 0,
+                                    "BTC": 0,
+                                    "UYU": 0,
+                                    "MAD": 0,
+                                    "CVE": 0,
+                                    "TOP": 0,
+                                    "AZN": 0,
+                                    "OMR": 0,
+                                    "PGK": 0,
+                                    "KES": 0,
+                                    "SEK": 0,
+                                    "BTN": 0,
+                                    "UAH": 0,
+                                    "GNF": 0,
+                                    "ERN": 0,
+                                    "MZN": 0,
+                                    "SVC": 0,
+                                    "ARS": 0,
+                                    "QAR": 0,
+                                    "IRR": 0,
+                                    "MRO": 0,
+                                    "CNY": 0,
+                                    "THB": 0,
+                                    "UZS": 0,
+                                    "XPF": 0,
+                                    "BDT": 0,
+                                    "LYD": 0,
+                                    "BMD": 0,
+                                    "KWD": 0,
+                                    "PHP": 0,
+                                    "RUB": 0,
+                                    "PYG": 0,
+                                    "ISK": 0,
+                                    "JMD": 0,
+                                    "COP": 0,
+                                    "MKD": 0,
+                                    "USD": 0,
+                                    "DZD": 0,
+                                    "PAB": 0,
+                                    "GGP": 0,
+                                    "SGD": 0,
+                                    "ETB": 0,
+                                    "JEP": 0,
+                                    "KGS": 0,
+                                    "SOS": 0,
+                                    "VEF": 0,
+                                    "VUV": 0,
+                                    "LAK": 0,
+                                    "BND": 0,
+                                    "ZMK": 0,
+                                    "XAF": 0,
+                                    "LRD": 0,
+                                    "XAG": 0,
+                                    "CHF": 0,
+                                    "HRK": 0,
+                                    "ALL": 0,
+                                    "DJF": 0,
+                                    "ZMW": 0,
+                                    "TZS": 0,
+                                    "VND": 0,
+                                    "XAU": 0,
+                                    "AUD": 0,
+                                    "ILS": 0,
+                                    "GHS": 0,
+                                    "GYD": 0,
+                                    "KPW": 0,
+                                    "BOB": 0,
+                                    "KHR": 0,
+                                    "MDL": 0,
+                                    "IDR": 0,
+                                    "KYD": 0,
+                                    "AMD": 0,
+                                    "BWP": 0,
+                                    "SHP": 0,
+                                    "TRY": 0,
+                                    "LBP": 0,
+                                    "TJS": 0,
+                                    "JOD": 0,
+                                    "AED": 0,
+                                    "HKD": 0,
+                                    "RWF": 0,
+                                    "EUR": 0,
+                                    "LSL": 0,
+                                    "DKK": 0,
+                                    "CAD": 0,
+                                    "BGN": 0,
+                                    "MMK": 0,
+                                    "MUR": 0,
+                                    "NOK": 0,
+                                    "SYP": 0,
+                                    "IMP": 0,
+                                    "ZWL": 0,
+                                    "GIP": 0,
+                                    "RON": 0,
+                                    "LKR": 0,
+                                    "NGN": 0,
+                                    "CRC": 0,
+                                    "CZK": 0,
+                                    "PKR": 0,
+                                    "XCD": 0,
+                                    "ANG": 0,
+                                    "HTG": 0,
+                                    "BHD": 0,
+                                    "KZT": 0,
+                                    "SRD": 0,
+                                    "SZL": 0,
+                                    "LTL": 0,
+                                    "SAR": 0,
+                                    "TTD": 0,
+                                    "YER": 0,
+                                    "MVR": 0,
+                                    "AFN": 0,
+                                    "INR": 0,
+                                    "AWG": 0,
+                                    "KRW": 0,
+                                    "NPR": 0,
+                                    "JPY": 0,
+                                    "MNT": 0,
+                                    "AOA": 0,
+                                    "PLN": 0,
+                                    "GBP": 0,
+                                    "SBD": 0,
+                                    "BYN": 0,
+                                    "HUF": 0,
+                                    "BYR": 0,
+                                    "BIF": 0,
+                                    "MWK": 0,
+                                    "MGA": 0,
+                                    "XDR": 0,
+                                    "BZD": 0,
+                                    "BAM": 0,
+                                    "EGP": 0,
+                                    "MOP": 0,
+                                    "NAD": 0,
+                                    "NIO": 0,
+                                    "PEN": 0,
+                                    "NZD": 0,
+                                    "WST": 0,
+                                    "TMT": 0,
+                                    "CLF": 0,
+                                    "BRL": 0
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": []
+            }
+        },
+        "/currency/{id}.json": {
+            "get": {
+                "tags": [
+                    "Currency"
+                ],
+                "description": "ID is the date for which request is been made",
+                "operationId": "getExchange",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "date",
+                        "in": "query",
+                        "description": "date",
+                        "required": true,
+                        "default": "for which date",
+                        "type": "string",
+                        "x-example": ""
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "from",
+                        "required": false,
+                        "default": "from which currency",
+                        "type": "string",
+                        "x-example": ""
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "to",
+                        "required": false,
+                        "default": "to which currency",
+                        "type": "string",
+                        "x-example": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Get"
+                        },
+                        "examples": {
+                            "application/json": {
+                                "from": "EUR",
+                                "to": "USD",
+                                "exchange": "1.09293731750000"
+                            }
+                        }
+                    }
+                },
+                "security": []
+            }
+        }
+    },
+    "definitions": {
+        "Counter": {
+            "description": "Model for Counter",
+            "required": [
+                "AED"
+            ],
+            "properties": {
+                "AED": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "AFN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ALL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "AMD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ANG": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "AOA": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ARS": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "AUD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "AWG": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "AZN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BAM": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BBD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BDT": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BGN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BHD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BIF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BMD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BND": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BOB": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BRL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BSD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BTC": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BTN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BWP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BYN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BYR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "BZD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CAD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CDF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CHF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CLF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CLP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CNY": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "COP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CRC": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CUC": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CUP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CVE": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "CZK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "DJF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "DKK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "DOP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "DZD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "EGP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ERN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ETB": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "EUR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "FJD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "FKP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "GBP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "GEL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "GGP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "GHS": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "GIP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "GMD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "GNF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "GTQ": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "GYD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "HKD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "HNL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "HRK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "HTG": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "HUF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "IDR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ILS": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "IMP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "INR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "IQD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "IRR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ISK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "JEP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "JMD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "JOD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "JPY": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "KES": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "KGS": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "KHR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "KMF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "KPW": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "KRW": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "KWD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "KYD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "KZT": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "LAK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "LBP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "LKR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "LRD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "LSL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "LTL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "LVL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "LYD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MAD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MDL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MGA": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MKD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MMK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MNT": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MOP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MRO": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MUR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MVR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MWK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MXN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MYR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "MZN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "NAD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "NGN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "NIO": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "NOK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "NPR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "NZD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "OMR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "PAB": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "PEN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "PGK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "PHP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "PKR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "PLN": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "PYG": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "QAR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "RON": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "RSD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "RUB": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "RWF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SAR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SBD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SCR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SDG": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SEK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SGD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SHP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SLL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SOS": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SRD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "STD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SVC": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SYP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "SZL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "THB": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "TJS": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "TMT": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "TND": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "TOP": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "TRY": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "TTD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "TWD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "TZS": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "UAH": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "UGX": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "USD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "UYU": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "UZS": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "VEF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "VND": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "VUV": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "WST": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "XAF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "XAG": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "XAU": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "XCD": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "XDR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "XOF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "XPF": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "YER": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ZAR": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ZMK": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ZMW": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                },
+                "ZWL": {
+                    "type": "integer",
+                    "format": "int32",
+                    "x-example": "0"
+                }
+            }
+        },
+        "Create": {
+            "description": "Model for Create",
+            "required": [
+                "counter"
+            ],
+            "properties": {
+                "counter": {
+                    "$ref": "#/definitions/Counter",
+                    "x-example": "{\n  \"FJD\": 0,\n  \"MXN\": 0,\n  \"STD\": 0,\n  \"LVL\": 0,\n  \"SCR\": 0,\n  \"CDF\": 0,\n  \"BBD\": 0,\n  \"GTQ\": 0,\n  \"CLP\": 0,\n  \"HNL\": 0,\n  \"UGX\": 0,\n  \"ZAR\": 0,\n  \"TND\": 0,\n  \"CUC\": 0,\n  \"BSD\": 0,\n  \"SLL\": 0,\n  \"SDG\": 0,\n  \"IQD\": 0,\n  \"CUP\": 0,\n  \"GMD\": 0,\n  \"TWD\": 0,\n  \"RSD\": 0,\n  \"DOP\": 0,\n  \"KMF\": 0,\n  \"MYR\": 0,\n  \"FKP\": 0,\n  \"XOF\": 0,\n  \"GEL\": 0,\n  \"BTC\": 0,\n  \"UYU\": 0,\n  \"MAD\": 0,\n  \"CVE\": 0,\n  \"TOP\": 0,\n  \"AZN\": 0,\n  \"OMR\": 0,\n  \"PGK\": 0,\n  \"KES\": 0,\n  \"SEK\": 0,\n  \"BTN\": 0,\n  \"UAH\": 0,\n  \"GNF\": 0,\n  \"ERN\": 0,\n  \"MZN\": 0,\n  \"SVC\": 0,\n  \"ARS\": 0,\n  \"QAR\": 0,\n  \"IRR\": 0,\n  \"MRO\": 0,\n  \"CNY\": 0,\n  \"THB\": 0,\n  \"UZS\": 0,\n  \"XPF\": 0,\n  \"BDT\": 0,\n  \"LYD\": 0,\n  \"BMD\": 0,\n  \"KWD\": 0,\n  \"PHP\": 0,\n  \"RUB\": 0,\n  \"PYG\": 0,\n  \"ISK\": 0,\n  \"JMD\": 0,\n  \"COP\": 0,\n  \"MKD\": 0,\n  \"USD\": 0,\n  \"DZD\": 0,\n  \"PAB\": 0,\n  \"GGP\": 0,\n  \"SGD\": 0,\n  \"ETB\": 0,\n  \"JEP\": 0,\n  \"KGS\": 0,\n  \"SOS\": 0,\n  \"VEF\": 0,\n  \"VUV\": 0,\n  \"LAK\": 0,\n  \"BND\": 0,\n  \"ZMK\": 0,\n  \"XAF\": 0,\n  \"LRD\": 0,\n  \"XAG\": 0,\n  \"CHF\": 0,\n  \"HRK\": 0,\n  \"ALL\": 0,\n  \"DJF\": 0,\n  \"ZMW\": 0,\n  \"TZS\": 0,\n  \"VND\": 0,\n  \"XAU\": 0,\n  \"AUD\": 0,\n  \"ILS\": 0,\n  \"GHS\": 0,\n  \"GYD\": 0,\n  \"KPW\": 0,\n  \"BOB\": 0,\n  \"KHR\": 0,\n  \"MDL\": 0,\n  \"IDR\": 0,\n  \"KYD\": 0,\n  \"AMD\": 0,\n  \"BWP\": 0,\n  \"SHP\": 0,\n  \"TRY\": 0,\n  \"LBP\": 0,\n  \"TJS\": 0,\n  \"JOD\": 0,\n  \"AED\": 0,\n  \"HKD\": 0,\n  \"RWF\": 0,\n  \"EUR\": 0,\n  \"LSL\": 0,\n  \"DKK\": 0,\n  \"CAD\": 0,\n  \"BGN\": 0,\n  \"MMK\": 0,\n  \"MUR\": 0,\n  \"NOK\": 0,\n  \"SYP\": 0,\n  \"IMP\": 0,\n  \"ZWL\": 0,\n  \"GIP\": 0,\n  \"RON\": 0,\n  \"LKR\": 0,\n  \"NGN\": 0,\n  \"CRC\": 0,\n  \"CZK\": 0,\n  \"PKR\": 0,\n  \"XCD\": 0,\n  \"ANG\": 0,\n  \"HTG\": 0,\n  \"BHD\": 0,\n  \"KZT\": 0,\n  \"SRD\": 0,\n  \"SZL\": 0,\n  \"LTL\": 0,\n  \"SAR\": 0,\n  \"TTD\": 0,\n  \"YER\": 0,\n  \"MVR\": 0,\n  \"AFN\": 0,\n  \"INR\": 0,\n  \"AWG\": 0,\n  \"KRW\": 0,\n  \"NPR\": 0,\n  \"JPY\": 0,\n  \"MNT\": 0,\n  \"AOA\": 0,\n  \"PLN\": 0,\n  \"GBP\": 0,\n  \"SBD\": 0,\n  \"BYN\": 0,\n  \"HUF\": 0,\n  \"BYR\": 0,\n  \"BIF\": 0,\n  \"MWK\": 0,\n  \"MGA\": 0,\n  \"XDR\": 0,\n  \"BZD\": 0,\n  \"BAM\": 0,\n  \"EGP\": 0,\n  \"MOP\": 0,\n  \"NAD\": 0,\n  \"NIO\": 0,\n  \"PEN\": 0,\n  \"NZD\": 0,\n  \"WST\": 0,\n  \"TMT\": 0,\n  \"CLF\": 0,\n  \"BRL\": 0\n}"
+                },
+                "id": {
+                    "type": "string",
+                    "format": "date",
+                    "x-example": "2022-01-30"
+                },
+                "itemPriceMap": {
+                    "$ref": "#/definitions/ItemPriceMap",
+                    "x-example": "{\n  \"FJD\": 2.406775,\n  \"MXN\": 23.195466,\n  \"STD\": 23073.889787,\n  \"LVL\": 0.674325,\n  \"SCR\": 16.056354,\n  \"CDF\": 2239.612304,\n  \"BBD\": 2.247596,\n  \"GTQ\": 8.557644,\n  \"CLP\": 899.908027,\n  \"HNL\": 27.399299,\n  \"UGX\": 3907.272149,\n  \"ZAR\": 17.38325,\n  \"TND\": 3.235161,\n  \"CUC\": 1.114789,\n  \"BSD\": 1.11315,\n  \"SLL\": 12786.634772,\n  \"SDG\": 491.622503,\n  \"IQD\": 1624.720509,\n  \"CUP\": 29.541919,\n  \"GMD\": 58.976655,\n  \"TWD\": 31.038009,\n  \"RSD\": 117.530122,\n  \"DOP\": 64.164332,\n  \"KMF\": 491.90125,\n  \"MYR\": 4.671389,\n  \"FKP\": 0.811478,\n  \"XOF\": 655.868396,\n  \"GEL\": 3.394578,\n  \"BTC\": 2.9468425e-05,\n  \"UYU\": 48.93039,\n  \"MAD\": 10.494782,\n  \"CVE\": 110.250106,\n  \"TOP\": 2.528287,\n  \"AZN\": 1.899568,\n  \"OMR\": 0.429032,\n  \"PGK\": 3.942567,\n  \"KES\": 126.458316,\n  \"SEK\": 10.516036,\n  \"BTN\": 83.585508,\n  \"UAH\": 31.872094,\n  \"GNF\": 10074.339011,\n  \"ERN\": 16.721863,\n  \"MZN\": 71.157428,\n  \"SVC\": 9.740684,\n  \"ARS\": 116.617746,\n  \"QAR\": 4.058991,\n  \"IRR\": 47127.722191,\n  \"MRO\": 397.979623,\n  \"CNY\": 7.091221,\n  \"THB\": 37.238467,\n  \"UZS\": 12042.543117,\n  \"XPF\": 119.620915,\n  \"BDT\": 95.661977,\n  \"LYD\": 5.128607,\n  \"BMD\": 1.114789,\n  \"KWD\": 0.337837,\n  \"PHP\": 56.976303,\n  \"RUB\": 87.170181,\n  \"PYG\": 7867.637125,\n  \"ISK\": 144.020073,\n  \"JMD\": 174.008492,\n  \"COP\": 4411.604016,\n  \"MKD\": 61.621675,\n  \"USD\": 1.114789,\n  \"DZD\": 156.594845,\n  \"PAB\": 1.11325,\n  \"GGP\": 0.811477,\n  \"SGD\": 1.510582,\n  \"ETB\": 55.476205,\n  \"JEP\": 0.811478,\n  \"KGS\": 94.533254,\n  \"SOS\": 652.152175,\n  \"VEF\": 238375664822.6875,\n  \"VUV\": 126.719687,\n  \"LAK\": 12595.698389,\n  \"BND\": 1.510796,\n  \"ZMK\": 10034.446334,\n  \"XAF\": 655.868396,\n  \"LRD\": 169.727111,\n  \"XAG\": 0.049605,\n  \"CHF\": 1.037476,\n  \"HRK\": 7.531187,\n  \"ALL\": 120.80368,\n  \"DJF\": 198.173228,\n  \"ZMW\": 20.065289,\n  \"TZS\": 2572.582458,\n  \"VND\": 25249.979863,\n  \"XAU\": 0.000622,\n  \"AUD\": 1.59552,\n  \"ILS\": 3.569991,\n  \"GHS\": 7.013053,\n  \"GYD\": 232.898537,\n  \"KPW\": 1003.310633,\n  \"BOB\": 7.664265,\n  \"KHR\": 4526.188536,\n  \"MDL\": 19.981801,\n  \"IDR\": 16034.461826,\n  \"KYD\": 0.927675,\n  \"AMD\": 537.667364,\n  \"BWP\": 13.035139,\n  \"SHP\": 1.535515,\n  \"TRY\": 15.108968,\n  \"LBP\": 1683.172612,\n  \"TJS\": 12.573501,\n  \"JOD\": 0.79043,\n  \"AED\": 4.094738,\n  \"HKD\": 8.686778,\n  \"RWF\": 1156.323787,\n  \"EUR\": 1.0,\n  \"LSL\": 17.435732,\n  \"DKK\": 7.442785,\n  \"CAD\": 1.422862,\n  \"BGN\": 1.955236,\n  \"MMK\": 1979.251314,\n  \"MUR\": 48.083504,\n  \"NOK\": 10.020177,\n  \"SYP\": 2800.350717,\n  \"IMP\": 0.811477,\n  \"ZWL\": 358.961731,\n  \"GIP\": 0.811477,\n  \"RON\": 4.94599,\n  \"LKR\": 224.864322,\n  \"NGN\": 463.373781,\n  \"CRC\": 713.363628,\n  \"CZK\": 24.488624,\n  \"PKR\": 196.700627,\n  \"XCD\": 3.012775,\n  \"ANG\": 1.99813,\n  \"HTG\": 114.29156,\n  \"BHD\": 0.420043,\n  \"KZT\": 484.40456,\n  \"SRD\": 23.349306,\n  \"SZL\": 17.370753,\n  \"LTL\": 3.291684,\n  \"SAR\": 4.182733,\n  \"TTD\": 7.565878,\n  \"YER\": 278.976453,\n  \"MVR\": 17.223918,\n  \"AFN\": 114.794492,\n  \"INR\": 83.661047,\n  \"AWG\": 2.007178,\n  \"KRW\": 1348.57231,\n  \"NPR\": 133.736933,\n  \"JPY\": 128.485096,\n  \"MNT\": 3186.994672,\n  \"AOA\": 589.868963,\n  \"PLN\": 4.580181,\n  \"GBP\": 0.831591,\n  \"SBD\": 8.993935,\n  \"BYN\": 2.905108,\n  \"HUF\": 358.561294,\n  \"BYR\": 21849.8722,\n  \"BIF\": 2222.999685,\n  \"MWK\": 909.426141,\n  \"MGA\": 4440.510111,\n  \"XDR\": 0.799792,\n  \"BZD\": 2.243897,\n  \"BAM\": 1.955566,\n  \"EGP\": 17.53963,\n  \"MOP\": 8.936493,\n  \"NAD\": 17.435727,\n  \"NIO\": 39.467668,\n  \"PEN\": 4.276122,\n  \"NZD\": 1.705484,\n  \"WST\": 2.912212,\n  \"TMT\": 3.912911,\n  \"CLF\": 0.032614,\n  \"BRL\": 5.983748\n}"
+                }
+            }
+        },
+        "ItemPriceMap": {
+            "description": "Model for ItemPriceMap",
+            "required": [
+                "AED"
+            ],
+            "properties": {
+                "AED": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4.094738"
+                },
+                "AFN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "114.794492"
+                },
+                "ALL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "120.80368"
+                },
+                "AMD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "537.667364"
+                },
+                "ANG": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.99813"
+                },
+                "AOA": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "589.868963"
+                },
+                "ARS": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "116.617746"
+                },
+                "AUD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.59552"
+                },
+                "AWG": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2.007178"
+                },
+                "AZN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.899568"
+                },
+                "BAM": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.955566"
+                },
+                "BBD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2.247596"
+                },
+                "BDT": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "95.661977"
+                },
+                "BGN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.955236"
+                },
+                "BHD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.420043"
+                },
+                "BIF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2222.999685"
+                },
+                "BMD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.114789"
+                },
+                "BND": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.510796"
+                },
+                "BOB": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "7.664265"
+                },
+                "BRL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "5.983748"
+                },
+                "BSD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.11315"
+                },
+                "BTC": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2.9468425e-05"
+                },
+                "BTN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "83.585508"
+                },
+                "BWP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "13.035139"
+                },
+                "BYN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2.905108"
+                },
+                "BYR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "21849.8722"
+                },
+                "BZD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2.243897"
+                },
+                "CAD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.422862"
+                },
+                "CDF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2239.612304"
+                },
+                "CHF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.037476"
+                },
+                "CLF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.032614"
+                },
+                "CLP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "899.908027"
+                },
+                "CNY": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "7.091221"
+                },
+                "COP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4411.604016"
+                },
+                "CRC": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "713.363628"
+                },
+                "CUC": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.114789"
+                },
+                "CUP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "29.541919"
+                },
+                "CVE": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "110.250106"
+                },
+                "CZK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "24.488624"
+                },
+                "DJF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "198.173228"
+                },
+                "DKK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "7.442785"
+                },
+                "DOP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "64.164332"
+                },
+                "DZD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "156.594845"
+                },
+                "EGP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "17.53963"
+                },
+                "ERN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "16.721863"
+                },
+                "ETB": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "55.476205"
+                },
+                "EUR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.0"
+                },
+                "FJD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2.406775"
+                },
+                "FKP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.811478"
+                },
+                "GBP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.831591"
+                },
+                "GEL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "3.394578"
+                },
+                "GGP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.811477"
+                },
+                "GHS": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "7.013053"
+                },
+                "GIP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.811477"
+                },
+                "GMD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "58.976655"
+                },
+                "GNF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "10074.339011"
+                },
+                "GTQ": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "8.557644"
+                },
+                "GYD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "232.898537"
+                },
+                "HKD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "8.686778"
+                },
+                "HNL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "27.399299"
+                },
+                "HRK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "7.531187"
+                },
+                "HTG": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "114.29156"
+                },
+                "HUF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "358.561294"
+                },
+                "IDR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "16034.461826"
+                },
+                "ILS": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "3.569991"
+                },
+                "IMP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.811477"
+                },
+                "INR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "83.661047"
+                },
+                "IQD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1624.720509"
+                },
+                "IRR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "47127.722191"
+                },
+                "ISK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "144.020073"
+                },
+                "JEP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.811478"
+                },
+                "JMD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "174.008492"
+                },
+                "JOD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.79043"
+                },
+                "JPY": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "128.485096"
+                },
+                "KES": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "126.458316"
+                },
+                "KGS": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "94.533254"
+                },
+                "KHR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4526.188536"
+                },
+                "KMF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "491.90125"
+                },
+                "KPW": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1003.310633"
+                },
+                "KRW": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1348.57231"
+                },
+                "KWD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.337837"
+                },
+                "KYD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.927675"
+                },
+                "KZT": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "484.40456"
+                },
+                "LAK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "12595.698389"
+                },
+                "LBP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1683.172612"
+                },
+                "LKR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "224.864322"
+                },
+                "LRD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "169.727111"
+                },
+                "LSL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "17.435732"
+                },
+                "LTL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "3.291684"
+                },
+                "LVL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.674325"
+                },
+                "LYD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "5.128607"
+                },
+                "MAD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "10.494782"
+                },
+                "MDL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "19.981801"
+                },
+                "MGA": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4440.510111"
+                },
+                "MKD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "61.621675"
+                },
+                "MMK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1979.251314"
+                },
+                "MNT": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "3186.994672"
+                },
+                "MOP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "8.936493"
+                },
+                "MRO": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "397.979623"
+                },
+                "MUR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "48.083504"
+                },
+                "MVR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "17.223918"
+                },
+                "MWK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "909.426141"
+                },
+                "MXN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "23.195466"
+                },
+                "MYR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4.671389"
+                },
+                "MZN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "71.157428"
+                },
+                "NAD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "17.435727"
+                },
+                "NGN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "463.373781"
+                },
+                "NIO": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "39.467668"
+                },
+                "NOK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "10.020177"
+                },
+                "NPR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "133.736933"
+                },
+                "NZD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.705484"
+                },
+                "OMR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.429032"
+                },
+                "PAB": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.11325"
+                },
+                "PEN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4.276122"
+                },
+                "PGK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "3.942567"
+                },
+                "PHP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "56.976303"
+                },
+                "PKR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "196.700627"
+                },
+                "PLN": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4.580181"
+                },
+                "PYG": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "7867.637125"
+                },
+                "QAR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4.058991"
+                },
+                "RON": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4.94599"
+                },
+                "RSD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "117.530122"
+                },
+                "RUB": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "87.170181"
+                },
+                "RWF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1156.323787"
+                },
+                "SAR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "4.182733"
+                },
+                "SBD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "8.993935"
+                },
+                "SCR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "16.056354"
+                },
+                "SDG": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "491.622503"
+                },
+                "SEK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "10.516036"
+                },
+                "SGD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.510582"
+                },
+                "SHP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.535515"
+                },
+                "SLL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "12786.634772"
+                },
+                "SOS": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "652.152175"
+                },
+                "SRD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "23.349306"
+                },
+                "STD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "23073.889787"
+                },
+                "SVC": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "9.740684"
+                },
+                "SYP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2800.350717"
+                },
+                "SZL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "17.370753"
+                },
+                "THB": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "37.238467"
+                },
+                "TJS": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "12.573501"
+                },
+                "TMT": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "3.912911"
+                },
+                "TND": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "3.235161"
+                },
+                "TOP": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2.528287"
+                },
+                "TRY": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "15.108968"
+                },
+                "TTD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "7.565878"
+                },
+                "TWD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "31.038009"
+                },
+                "TZS": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2572.582458"
+                },
+                "UAH": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "31.872094"
+                },
+                "UGX": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "3907.272149"
+                },
+                "USD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "1.114789"
+                },
+                "UYU": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "48.93039"
+                },
+                "UZS": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "12042.543117"
+                },
+                "VEF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "238375664822.6875"
+                },
+                "VND": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "25249.979863"
+                },
+                "VUV": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "126.719687"
+                },
+                "WST": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "2.912212"
+                },
+                "XAF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "655.868396"
+                },
+                "XAG": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.049605"
+                },
+                "XAU": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.000622"
+                },
+                "XCD": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "3.012775"
+                },
+                "XDR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "0.799792"
+                },
+                "XOF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "655.868396"
+                },
+                "XPF": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "119.620915"
+                },
+                "YER": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "278.976453"
+                },
+                "ZAR": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "17.38325"
+                },
+                "ZMK": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "10034.446334"
+                },
+                "ZMW": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "20.065289"
+                },
+                "ZWL": {
+                    "type": "number",
+                    "format": "float",
+                    "x-example": "358.961731"
+                }
+            }
+        },
+        "Get": {
+            "description": "Model for Get",
+            "required": [
+                "exchange",
+                "from",
+                "to"
+            ],
+            "properties": {
+                "exchange": {
+                    "type": "string",
+                    "x-example": "1.09293731750000"
+                },
+                "from": {
+                    "type": "string",
+                    "x-example": "EUR"
+                },
+                "to": {
+                    "type": "string",
+                    "x-example": "USD"
+                }
+            }
+        }
+    },
+    "securityDefinitions": {},
+    "security": [],
+    "tags": [
+        {
+            "name": "Currency",
+            "description": "Operations about Currency"
+        },
+        {
+            "name": "Exchange",
+            "description": "Operations about Exchange"
+        }
+    ]
+}
